@@ -1,0 +1,71 @@
+.about-us {
+  line-height: 20px;
+  color: @black;
+  margin-bottom: 60px;
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 58px;
+  }
+
+  &__item {
+    font-weight: bold;
+    padding-top: 55px;
+    padding-right: 0px;
+    margin-top: 30px;
+    margin-bottom: -2px;
+    font-size: 17px;
+
+    &--eco {
+      padding-right: 70px;
+  }
+    &--price, &--withlove {
+      padding-right: 50px;
+    }
+    &--likes {
+      padding-right: 60px;
+    }
+    &--gift {
+      padding-right: 40px;
+    }
+
+  }
+}
+
+@media @tablet-widths {
+
+  .about-us__list {
+    height: 450px;
+  }
+
+  .about-us__item--gift,
+  .about-us__item--withlove,
+  .about-us__item--local {
+    float: right;
+    width: 250px;
+    padding-right: 0;
+  }
+   .about-us__item--eco,
+  .about-us__item--price,
+  .about-us__item--likes {
+    float: left;
+    width: 250px;
+    padding-right: 0;
+  }
+}
+
+@media @desktop-widths {
+
+  .about-us__header {
+    display: block;
+    height: 100px;
+
+  }
+  .about-us__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
