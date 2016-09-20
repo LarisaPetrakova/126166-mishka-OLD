@@ -4,16 +4,105 @@
   font-weight: bold;
   line-height: 24px;
   text-decoration: none;
+  position: relative;
+  height: 78px;
+  border-bottom: 1px solid @light-grey;
+  border-top: 1px solid @light-grey;
+
+  &__logo {
+    width: 90px;
+    height: 45px;
+    padding-top: 20px;
+    margin: auto;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+  }
 
   &__list {
+    width: 100%;
     list-style: none;
+    padding-left: 0;
   }
 
   &__item {
     border-bottom: 1px solid @light-grey;
   }
   &__link {
+    display: block;
     text-decoration: none;
     color: @black;
+    padding-left: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: @white;
+
+  }
+}
+@media @tablet-widths {
+
+  .main-nav {
+    position: relative;
+  }
+
+  &__logo {
+    display: block;
+    width: 370px;
+    height: 90px;
+    float: left;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__item {
+    display: block;
+    border-bottom: none;
+  }
+
+  &__link--search {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 370px;
+    width: 80px;
+    height: 90px;
+  }
+
+  &__link--basket {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 300px;
+    height: 90px;
+  }
+
+  &__link--catalog {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 150px;
+    height: 30px;
+  }
+
+  &__link--custom {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 150px;
+    height: 30px;
+  }
+}
+@media @desktop-widths {
+
+  .page-header__logo {
+    height: 80px;
   }
 }

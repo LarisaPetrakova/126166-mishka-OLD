@@ -3,32 +3,36 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <body>
   <header class="page-header">
     <nav class="main-nav main-nav--closed">
         <div class="main-nav__logo">
-      <a href="index.html"><img src="http://placehold.it/100x45" alt="Мишка" width="100" height="45"></a>
+      <a href="index.html"><img src="../img/logo-mobile.svg" alt="Мишка"></a>
     </div>
-      <button class="main-nav__toggle" type="button">      <a href="index.html"><img src="http://placehold.it/30x30" alt="Меню" width="30" height="30"></a>
+      <button class="main-nav__toggle" type="button">
+        <a href="index.html">
+          <img src="http://placehold.it/30x30" alt="Меню" width="30" height="30"></a>
 </button>
-      <div class="wrapper visually-hidden">
+      <div class="visually-hidden">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link main-nav__link--custom" href="form.html">Вязание на заказ</a>
             </li>
-          <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+          <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
-          <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
             </li>
         </ul>
       </div>
@@ -36,19 +40,20 @@
   </header>
   <section class="features">
     <div class="features__header">
-      <h1 class="features__slogan">Милые штуки ручной работы для дома</h1> </div>
+      <h1 class="features__slogan">Милые штуки ручной<br> работы для дома</h1> </div>
     <div class="features__category">
         <div class="features__name features__name--interior">Предметы интерьера</div>
         <div class="features__name features__name--toys">Детские игрушки</div>
     </div>
   </section>
-    <section class="product-week">
-    <div class="wrapper">
+    <section class="product-week clearfix">
+    <div class="wrapper clearfix">
         <header class="section__header">
-      <h2 class="product-week__title">Вязаные корзинки</h2>
+      <h2 class="product-week__title clearfix">Вязаные корзинки</h2>
             <b class="product-week__subtitle">Товар недели</b>
             </header>
-      <p class="plain-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <div class="product-week__inner clearfix">
+        <p class="plain-text plain-text__product-week">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="product-week__info">
         <tr>
           <td class="product-week__value">Цвет</td>
@@ -63,7 +68,8 @@
           <td class="product-week__field">15 см</td>
         </tr>
       </table>
-        <img class="product-week__img" src="http://placehold.it/150x100" width="150px" height="100px">
+      </div>
+        <img class="product-week__img" src="img/triple-set-mobile@1x.jpg" width="260px" height="315px">
       <p class="product-week__price">Цена: 990 руб.</p>
         <a class="product-week__buy btn" href="#">Заказать</a>
         </div>
@@ -81,26 +87,27 @@
     </div>
   </section>
   <section class="about-us">
-      <header class="section__header">
+    <div class="wrapper">
+      <header class="about-us__header">
       <h2 class="product-week__title">Коротко о нас:</h2>
             </header>
-    <ul class="about-us__list">
-      <li class="wrapper">
+    <ul class="about-us__list clearfix">
+      <li>
         <p class="about-us__item about-us__item--eco">Экологически чистые материалы</p>
       </li>
-      <li class="wrapper">
+      <li>
         <p class="about-us__item about-us__item--price">Скандинавский стиль по российской цене</p>
       </li>
-      <li class="wrapper">
+      <li>
         <p class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</p>
       </li>
-      <li class="wrapper">
+      <li>
         <p class="about-us__item about-us__item--withlove">Связано вручную с любовью и умилением</p>
       </li>
-      <li class="wrapper">
+      <li>
         <p class="about-us__item about-us__item--local">Поддержка отечественного производителя</p>
       </li>
-      <li class="wrapper">
+      <li>
         <p class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</p>
       </li>
     </ul>
@@ -108,33 +115,40 @@
         <header class="section__header">
       <h2 class="product-week__title">Отзывы</h2>
             </header>
-      <div class="wrapper slider">
+      <div class="slider">
         <blockquote class="reviews__item slider__item">
-          <p class="index__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p> <cite class="reviews__author-name">Анастасия Красильникова</cite> <a href="#" class="reviews__author-insta">@misssssiskras</a> </blockquote>
+          <p class="plain-text plain-text__reviews">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p> <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <a href="#" class="reviews__author-insta">@misssssiskras</a> </blockquote>
         <button class="reviews__prev" type="button"></button>
         <button class="reviews__next" type="button"></button>
-      </div> <a class="reviews__write btn" href="#">Написать</a> </div>
+      </div>
+      <a class="reviews__write btn" href="#">Написать</a>
+      </div>
+    </div>
   </section>
-  <section class="contacts">
-    <div class="address">
+  <section class="contacts clearfix">
+    <div class="wrapper">
       <h3>Контакты</h3>
-      <table class="address__table">
-        <tr>
-          <td class="address__field">e-mail:</td>
-          <td class="address__value">info@mimimishkashop.ru</td>
+      <table class="contacts__table">
+        <tr class="contacts__row">
+          <td class="contacts__field">e-mail:</td>
+          <td class="contacts__value contacts__value--underline">info@mimimishkashop.ru</td>
         </tr>
-        <tr>
-          <td class="address__field">адрес:</td>
-          <td class="address__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+        <tr class="contacts__row">
+          <td class="contacts__field">адрес:</td>
+          <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
         </tr>
       </table>
     </div>
-    <div class="map">
+    <div class="contacts__map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7461291855138!2d30.318908315731885!3d59.93635466924534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2sNevsky+pr.%2C+20%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1473590108920" width="320" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="write-us"> <a href="#" class="write-us btn">Напишите нам</a> </div>
+    <div class="contacts__write-us"> <a href="#" class="contacts__btn btn">Напишите нам</a> </div>
   </section>
   <footer class="page-footer">
+    <div class="page-footer__logo">
+      <a href="index.html"><img src="../img/logo-mobile.svg" alt="Мишка"></a>
+    </div>
     <div class="page-footer__social">
       <a class="social-link social-link--insta" href="#"> <img class="social-link__img" src="http://placehold.it/40x40" alt="Instagram" width="40" height="40"></a>
       <a class="social-link social-link--fb" href="#"> <img class="social-link__img" src="http://placehold.it/40x40" alt="Facebook" width="40" height="40"></a>

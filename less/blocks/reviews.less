@@ -3,7 +3,12 @@
   font-weight: normal;
   color: @dark-grey;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
+
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
 
   &__author-name {
     font-size: 18px;
@@ -19,5 +24,37 @@
     line-height: 30px;
     text-decoration: none;
   }
+  &__prev, &__next {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 128px;
+    height: 50px;
+    margin-bottom: 37px;
+  }
+}
+@media @tablet-widths {
 
+  .reviews {
+    position: relative;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 0;
+    left: 300px;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    float: right;
+  }
+}
+@media @desktop-widths {
+  .reviews__write {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+  }
 }

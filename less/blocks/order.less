@@ -3,6 +3,7 @@
   &__unit {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 28px;
   }
   &__property {
     font-size: 17px;
@@ -10,12 +11,34 @@
     color: @light-green;
     line-height: 16px;
     text-transform: uppercase;
+    margin-bottom: 35px;
   }
 
   &__input {
     display: none;
   }
 
+  &__label {
+    font-size: 17px;
+    font-weight: bold;
+    color: @black;
+    line-height: 18px;
+    display: block;
+    padding-bottom: 9px;
+    margin-left: 62px;
+
+    &--color {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__check {
+    display: none;
+  }
+
+  &__name-label {
+
+  }
   &__placeholder {
     font-size: 17px;
     font-weight: normal;
@@ -25,21 +48,31 @@
     border: none;
     border-bottom: 2px solid @black;
     display: block;
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
-  &__label {
-    font-size: 17px;
-    font-weight: bold;
-    color: @black;
-    line-height: 18px;
-    padding-left: 90px;
-    padding-right: 70px;
+  textarea {
+    min-height: 108px;
+    border: 2px solid @black;
+    width: 239px;
+    padding-left: 15px;
+    margin-top: 53px;
   }
 
-  &__check {
-    display: none;
+  &__send {
+    margin-left: 30px;
+    background-color: @white;
   }
-
+}
+@media @tablet-widths {
+  .order__unit:nth-child(2n) {
+    background-color: @light-grey;
+  }
+}
+@media @desktop-widths {
+  .order__unit {
+    display: flex;
+  }
 }
