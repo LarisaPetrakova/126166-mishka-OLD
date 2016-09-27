@@ -5,7 +5,11 @@
   color: @black;
   line-height: 18px;
   padding-left: 30px;
-  padding-left: 30px;
+  padding-right: 30px;
+
+  &__logo {
+    display: none;
+  }
 
   &__social {
     padding: 20px 60px;
@@ -13,6 +17,30 @@
   }
 
   &__copyright {
-    padding: 20px 40px;
+    padding-top: 2px;
+    padding-bottom: 40px;
+    padding-left: 38px;
   }
+}
+
+@media @tablet-widths {
+  .page-footer {
+    height: 110px;
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width:113px;
+  }
+  .page-footer__social {
+    width: 200px;
+  }
+  .page-footer__copyright {
+    width: 200px;
+  }
+}
+@media @desktop-widths {
+
 }
