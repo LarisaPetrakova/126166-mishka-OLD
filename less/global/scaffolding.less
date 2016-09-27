@@ -5,18 +5,16 @@ body {
   outline: 1px solid red;
 }
 
-@media @tablet-widths {
-  body {
-    width: 640px;
-    margin: 0 auto;
-  }
-}
-
-@media @desktop-widths {
-  body {
-    width: 960px;
-    margin: 0 auto;
-  }
+.unit-header {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #231f20;
+  background-color: @light-grey;
+  padding-top: 53px;
+  padding-bottom: 57px;
+  text-align: center;
+  letter-spacing: 0.8px;
 }
 
 img {
@@ -31,16 +29,18 @@ img {
   padding-bottom: 7px;
 }
 
-.unit-header {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #231f20;
-  background-color: @light-grey;
-  padding-top: 53px;
-  padding-bottom: 57px;
-  text-align: center;
-  letter-spacing: 0.8px;
+@media @tablet-widths {
+  body {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 @media @tablet-widths {
