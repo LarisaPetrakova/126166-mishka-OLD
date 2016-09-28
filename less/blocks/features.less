@@ -14,6 +14,7 @@
     padding-right: 35px;
     padding-top: 69px;
     margin-bottom: 122px;
+    margin-top: 0;
   }
 
   &__category {
@@ -49,38 +50,34 @@
     background-color: @light-grey;
     outline: 1px solid yellow;
     min-height: 535px;
+    padding-top: 83px;
 
     &__slogan {
-      margin-bottom: 300px;
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 373px;
+
     }
     &__category {
-      width: 610px;
-      height: 110px;
       padding-bottom: 0;
+      display: flex;
+      margin-left: 50px;
+      font-size: 20px;
+      line-height: 30px;
     }
 
-    &__name {
-    margin-left: 50px;
-    width: 670px;
-      height: 110px;
-
-
-      &--interior {
-      float: left;
-      width: 275px;
-      padding-right: 30px;
-      margin-right: 0;
-      box-sizing: border-box;
-
+    .features__name--interior {
+      padding-left: 35px;
+      padding-top: 30px;
+      padding-right: 190px;
+      padding-bottom: 30px;
     }
-      &--toys {
-      float: right;
-      width: 275px;
-      padding-right: 70px;
-      margin-left: 0;
-        box-sizing: border-box;
 
-    }
+    .features__name--toys {
+      padding-left: 35px;
+      padding-top: 30px;
+      padding-right: 205px;
+      padding-bottom: 30px;
     }
   }
 }
