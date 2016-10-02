@@ -5,45 +5,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка - форма заказа</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__logo">
-        <a href="index.html"><img src="../img/logo-mobile.svg" alt="Мишка"></a>
-      </div>
-      <button class="main-nav__toggle" type="button">
-        <a href="index.html"><img src="http://placehold.it/30x30" alt="Меню" width="30" height="30"></a>
-      </button>
-      <div class="wrapper visually-hidden">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"> <a class="main-nav__link" href="catalog.html">Каталог товаров</a> </li>
-          <li class="main-nav__item"> <a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
-          <li class="main-nav__item"> <a class="main-nav__link" href="#">Поиск по сайту</a> </li>
-          <li class="main-nav__item"> <a class="main-nav__link" href="#">Корзина: пока пуста</a> </li>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__logo">
+          <a href="index.html"><img src="../img/logo-mobile.svg" alt="Мишка"></a>
+        </div>
+        <button class="main-nav__toggle" type="button">
+          <a href="index.html"> <img src="http://placehold.it/30x30" alt="Меню" width="30" height="30"></a>
+        </button>
+        <div class="visually-hidden">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--active">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a> </li>
+            <li class="main-nav__item main-nav__item--custom">
+              <a class="main-nav__link main-nav__link--custom" href="form.html">Вязание на заказ</a> </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link main-nav__link--search" href="#"><span class="visually-hidden">Поиск по сайту</span></a> </li>
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a> </li>
+            <li class="main-nav__item main-nav__item--new visually-hidden">
+              <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a> </li>
+            <li class="main-nav__item main-nav__item--sale visually-hidden">
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a> </li>
+          </ul>
+        </div>
+        <p class="visually-hidden">Бесплатная доставка по России</p>
+      </nav>
+    </header>
 
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <h1 class="unit-header">Вязание на заказ</h1>
+  <h1 class="h1-pages">Вязание на заказ</h1>
   <section class="form">
-    <p class="font wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <p class="font font__form wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order" action="#" method="post">
       <div class="order__unit">
-        <h3>Тип</h3>
+        <h3 class="h3">Тип</h3>
         <label class="order__label">
           <input type="radio" checked>Аксессуар для интерьера</label>
         <label class="order__label">
           <input type="radio">Детская игрушка</label>
       </div>
       <div class="order__unit">
-        <h3>Цвет</h3>
+        <h3 class="h3">Цвет</h3>
 <!--        А линию после шрифта можно сделать через модификатор  -->
         <label class="order__label order__label--color">
           <input type="checkbox" checked>Белый</label>
@@ -59,7 +68,7 @@
           <input type="checkbox">Оранжевый</label>
       </div>
       <div class="order__unit clearfix">
-        <h3>ФИО</h3>
+        <h3 class="h3">ФИО</h3>
         <label class="order__name-label">Имя:
           <input type="text" placeholder="Введите ваше имя">
         </label>

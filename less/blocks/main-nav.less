@@ -47,9 +47,9 @@
 @media @tablet-widths {
 
   .main-nav {
-    position: relative;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     border-bottom: 1px solid @grey;
     height: 88px;
 
@@ -62,10 +62,10 @@
   }
 
   &__list {
-    margin-top: -88px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    margin-top: -88px;
     }
 
   &__toggle {
@@ -74,43 +74,62 @@
 
   &__item {
     border-bottom: none;
+    outline: 1px solid blue;
   }
-
+  .main-nav__item--catalog {
+    order: 3;
+  }
+  .main-nav__item--custom {
+    order: 4;
+  }
+  .main-nav__item--search {
+    order: 1;
+  }
+  .main-nav__item--basket {
+    order: 2;
+  }
   &__link--search {
-    width: 10px;
-    height: 30px;
+    width: 8px;
+    height: 34px;
     border-left: 1px solid @grey;
     border-right: 1px solid @grey;
-    order: 2;
+    margin-left: 268px;
   }
 
   &__link--basket {
-    width: 300px;
-    height: 20px;
+    width: 235px;
+    height: 34px;
     font-size: 17px;
     line-height: 24px;
-    padding: 30px 20px;
-    order: 1;
   }
 
   &__link--catalog {
-    width: 150px;
-    height: 30px;
-    order: 3;
     background-color: transparent;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    font-size: 15px;
   }
 
   &__link--custom {
-    width: 150px;
-    height: 30px;
-    order: 4;
     background-color: transparent;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
   }
+    p {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+      align-self: flex-end;
+    }
 }
 }
 @media @desktop-widths {
 
-  .page-header__logo {
-    height: 80px;
-  }
+
 }

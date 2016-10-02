@@ -33,14 +33,11 @@ img {
     width: 768px;
     margin: 0 auto;
   }
-
-  .unit-header {
-    height: 225px;
-    font-size: 43px;
-  line-height: 50px;
+  .slider {
+    display: flex;
   }
 
-  .section__header {
+  .section-header {
     display: flex;
     justify-content: space-between;
   }
@@ -48,7 +45,10 @@ img {
 
 @media @desktop-widths {
   body {
-    width: 960px;
+    width: 1150px;
     margin: 0 auto;
+  }
+  .section-header {
+    flex-direction: row-reverse;
   }
   }
