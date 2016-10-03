@@ -2,21 +2,6 @@ body {
   width: 320px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
-  outline: 1px solid red;
-}
-
-@media @tablet-widths {
-  body {
-    width: 640px;
-    margin: 0 auto;
-  }
-}
-
-@media @desktop-widths {
-  body {
-    width: 960px;
-    margin: 0 auto;
-  }
 }
 
 img {
@@ -44,9 +29,26 @@ img {
 }
 
 @media @tablet-widths {
-  .unit-header {
-    height: 225px;
-    font-size: 43px;
-  line-height: 50px;
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .slider {
+    display: flex;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
   }
 }
+
+@media @desktop-widths {
+  body {
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .section-header {
+    flex-direction: row-reverse;
+  }
+  }

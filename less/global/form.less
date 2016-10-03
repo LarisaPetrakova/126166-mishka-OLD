@@ -1,3 +1,152 @@
 .form {
   margin-bottom: 58px;
 }
+
+.order {
+
+  input[type=radio] {
+    display: none;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=text] {
+    font-size: 17px;
+    font-weight: normal;
+    color: #d2d2d2;
+    line-height: 18px;
+    width: 260px;
+    border: none;
+    border-bottom: 2px solid @black;
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__unit {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 18px;
+  }
+
+  &__h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: @light-green;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  &__label {
+    font-size: 17px;
+    font-weight: bold;
+    color: @black;
+    line-height: 18px;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin-left: 62px;
+
+    &--color {
+      margin-bottom: 10px;
+    }
+  }
+
+  textarea {
+    min-height: 108px;
+    border: 2px solid @black;
+    width: 239px;
+    padding-left: 15px;
+    margin-top: 53px;
+  }
+
+  &__send {
+    margin-left: 30px;
+    background-color: @white;
+  }
+}
+@media @tablet-widths {
+  .form {
+    padding-top: 39px;
+    outline: 1px solid yellow;
+  }
+
+.order {
+    outline: 1px solid green;
+
+  input[type=text] {
+    flex-grow: 1;
+    min-width: 50px;
+  }
+  textarea {
+    min-height: 140px;
+    width: 500px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: normal;
+    padding-top: 10px;
+  }
+  }
+  .h3 {
+    width: 100px;
+    margin-left: 21px;
+    padding-top: 20px;
+    margin-bottom: 200px;
+  }
+  .order__unit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .order__unit:first-child {
+    height: 175px;
+  }
+  .order__unit:nth-child(2) {
+    height: 295px;
+  }
+   .order__unit:nth-child(3) {
+    height: 280px;
+  }
+   .order__unit:nth-child(4) {
+margin-bottom: 0;
+  }
+  .order__unit:nth-child(5) {
+   background-color: @light-grey;
+  }
+  .order__unit:nth-child(6) {
+   background-color: @white;
+  }
+  .order__unit:nth-child(2n) {
+    background-color: @light-grey;
+  }
+  .order__h3 {
+    margin-bottom: 50px;
+    display: flex;
+    flex-shrink: 0;
+  }
+  input[type=text] {
+    flex-grow: 1;
+    min-width: 100px;
+  }
+  .order__label {
+    margin-bottom: 20px;
+    padding-top: 0;
+    display: block;
+  }
+  .order__name-label {
+display: flex;
+    width: 510px;
+    flex-shrink: 0;
+  }
+
+}
+@media @desktop-widths {
+
+}
+

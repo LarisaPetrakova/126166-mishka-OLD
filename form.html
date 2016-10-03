@@ -5,84 +5,107 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка - форма заказа</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav main-nav--closed">
+  <body>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed">
         <div class="main-nav__logo">
-      <a href="index.html"><img src="../img/logo-mobile.svg" alt="Мишка"></a>
-    </div>
-      <button class="main-nav__toggle" type="button">      <a href="index.html"><img src="http://placehold.it/30x30" alt="Меню" width="30" height="30"></a>
-</button>
-      <div class="wrapper visually-hidden">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-            </li>
-          <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <div class="unit-header">
-    <h1 class="unit-header__title">Вязание на заказ</h1>
-    </div>
-    <section class="form">
-    <p class="plain-text wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <a href="index.html"><img src="../img/logo-mobile.svg" alt="Мишка"></a>
+        </div>
+        <button class="main-nav__toggle" type="button">
+          <a href="index.html"> <img src="http://placehold.it/30x30" alt="Меню" width="30" height="30"></a>
+        </button>
+        <div class="visually-hidden">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--active">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a> </li>
+            <li class="main-nav__item main-nav__item--custom">
+              <a class="main-nav__link main-nav__link--custom" href="form.html">Вязание на заказ</a> </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link main-nav__link--search" href="#"><span class="visually-hidden">Поиск по сайту</span></a> </li>
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a> </li>
+            <li class="main-nav__item main-nav__item--new visually-hidden">
+              <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a> </li>
+            <li class="main-nav__item main-nav__item--sale visually-hidden">
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a> </li>
+          </ul>
+        </div>
+        <p class="visually-hidden">Бесплатная доставка по России</p>
+      </nav>
+    </header>
+
+  <h1 class="h1-pages">Вязание на заказ</h1>
+  <section class="form">
+    <p class="font font__form wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order" action="#" method="post">
       <div class="order__unit">
-        <h3 class="order__property">Тип</h3>
-        <label class="order__label"><input class="order__input" type="radio" checked>Аксессуар для интерьера</label><br>
-        <label class="order__label"><input class="order__input" type="radio">Детская игрушка</label>
+        <h3 class="h3">Тип</h3>
+        <label class="order__label">
+          <input type="radio" checked>Аксессуар для интерьера</label>
+        <label class="order__label">
+          <input type="radio">Детская игрушка</label>
       </div>
       <div class="order__unit">
-        <h3 class="order__property">Цвет</h3>
-        <label class="order__label order__label--color"><input class="order__check" type="checkbox" checked>Белый</label>
-        <label class="order__label order__label--color"><input class="order__check" type="checkbox" checked>Серый</label>
-        <label class="order__label order__label--color"><input class="order__check" type="checkbox">"Тиффани"</label>
-        <label class="order__label order__label--color"><input class="order__check" type="checkbox">Черный</label>
-        <label class="order__label order__label--color"><input class="order__check" type="checkbox">Розовый</label>
-        <label class="order__label order__label--color"><input class="order__check" type="checkbox">Оранжевый</label>
+        <h3 class="h3">Цвет</h3>
+<!--        А линию после шрифта можно сделать через модификатор  -->
+        <label class="order__label order__label--color">
+          <input type="checkbox" checked>Белый</label>
+        <label class="order__label order__label--color">
+          <input type="checkbox" checked>Серый</label>
+        <label class="order__label order__label--color">
+          <input type="checkbox">"Тиффани"</label>
+        <label class="order__label order__label--color">
+          <input type="checkbox">Черный</label>
+        <label class="order__label order__label--color">
+          <input type="checkbox">Розовый</label>
+        <label class="order__label order__label--color">
+          <input type="checkbox">Оранжевый</label>
       </div>
       <div class="order__unit clearfix">
-        <h2 class="order__property">ФИО</h2>
-        <label class="order__name-label">Имя:<input class="order__placeholder" type="text" placeholder="Введите ваше имя"></label>
-        <label class="order__name-label">Фамилия:<input class="order__placeholder" type="text" placeholder="Укажите фамилию"></label>
-        <label class="order__name-label">Отчество:<input class="order__placeholder" type="text" placeholder="Отчество, если желаете"></label>
-         </div>
+        <h3 class="h3">ФИО</h3>
+        <label class="order__name-label">Имя:
+          <input type="text" placeholder="Введите ваше имя">
+        </label>
+        <label class="order__name-label">Фамилия:
+          <input type="text" placeholder="Укажите фамилию">
+        </label>
+        <label class="order__name-label">Отчество:
+          <input type="text" placeholder="Отчество, если желаете">
+        </label>
+      </div>
       <div class="order__unit order__unit--call">
-        <label class="order__property">Тел<input class="order__placeholder" type="text" placeholder="+7 ХХХ ХХ ХХ"></label>
-         </div>
+        <label class="order__h3">Тел
+          <input type="text" placeholder="+7 ХХХ ХХ ХХ">
+        </label>
+      </div>
       <div class="order__unit order__unit--email">
-        <label class="order__property">E-mail<input class="order__placeholder" type="text" placeholder="Ваш Email"></label>
-         </div>
+        <label class="order__h3">E-mail
+          <input type="text" placeholder="Ваш Email">
+        </label>
+      </div>
       <div class="order__unit">
-          <label class="order__property">Доп<textarea class="order__placeholder" type="text" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
-        </div>
-    </form>
-    <p class="plain-text plain-text__order">Все поля обязательны для заполнения</p>
+        <label class="order__h3">Доп
+          <textarea type="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </label>
+      </div>
+      <p class="font font__order">Все поля обязательны для заполнения</p>
     <button class="btn order__send">Отправить заказ</button>
+    </form>
   </section>
   <footer class="page-footer">
     <div class="page-footer__social">
-      <a class="social-link social-link--insta" href="#"> <img class="social-link__img" src="http://placehold.it/40x40" alt="Instagram" width="40" height="40"></a>
-      <a class="social-link social-link--fb" href="#"> <img class="social-link__img" src="http://placehold.it/40x40" alt="Facebook" width="40" height="40"></a>
-      <a class="social-link social-link--tw" href="#"> <img class="social-link__img" src="http://placehold.it/40x40" alt="Twitter" width="40" height="40"></a>
+      <a class="social-link social-link--insta" href="#"></a>
+      <a class="social-link social-link--fb" href="#"></a>
+      <a class="social-link social-link--tw" href="#"></a>
     </div>
     <div class="page-footer__copyright"> <b>Разработано:</b>
-      <a class="page-footer__copyright-link" href="#"> <img class="copyright-link__img" src="http://placehold.it/40x40" alt="HTML Academy" width="40" height="40"> </a>
+      <a class="page-footer__copyright-link" href="#"></a>
     </div>
   </footer>
 </body>
