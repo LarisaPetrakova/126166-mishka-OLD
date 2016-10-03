@@ -4,19 +4,6 @@
   background-repeat: no-repeat;
   background-color: @light-grey;
 
-  &__slogan {
-    font-size: 27px;
-    font-weight: bold;
-    color: #010000;
-    line-height: 30px;
-    text-align: center;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 69px;
-    margin-bottom: 122px;
-    margin-top: 0;
-  }
-
   &__category {
     width: 320px;
     font-size: 19px;
@@ -40,6 +27,7 @@
   }
 }
 }
+
 @media @tablet-widths {
   .features {
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -49,51 +37,50 @@
     background-color: @light-grey;
     outline: 1px solid yellow;
     min-height: 535px;
+    padding-top: 83px;
 
-    &__slogan {
-      margin-bottom: 300px;
-    }
     &__category {
-      width: 610px;
-      height: 110px;
       padding-bottom: 0;
+      display: flex;
+      margin-left: 50px;
+      font-size: 20px;
+      line-height: 30px;
     }
 
-    &__name {
-    margin-left: 50px;
-    width: 670px;
-      height: 110px;
-
-
-      &--interior {
-      float: left;
-      width: 275px;
-      padding-right: 30px;
-      margin-right: 0;
-      box-sizing: border-box;
-
+    &__name--interior {
+      padding-left: 35px;
+      padding-top: 30px;
+      padding-right: 190px;
+      padding-bottom: 30px;
     }
-      &--toys {
-      float: right;
-      width: 275px;
-      padding-right: 70px;
-      margin-left: 0;
-        box-sizing: border-box;
 
-    }
+    &__name--toys {
+      padding-left: 35px;
+      padding-top: 30px;
+      padding-right: 205px;
+      padding-bottom: 30px;
     }
   }
 }
 @media @desktop-widths {
-
+  .h1 {
+    margin-bottom: 360px;
+  }
   .features__category {
-    width: 900px;
+    width: 1050px;
+    margin-left: 48px;
   }
 
   .features__name--interior {
-      width: 425px;
+      padding-left: 40px;
+      padding-top: 28px;
+      padding-right: 270px;
+      padding-bottom: 30px;
   }
   .features__name--toys {
-      width: 425px;
+      padding-left: 38px;
+      padding-top: 28px;
+      padding-right: 310px;
+      padding-bottom: 30px;
 }
 }
