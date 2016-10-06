@@ -1,15 +1,35 @@
 .visually-hidden {
   display: none;
 }
+.hidden {
+  display: none;
+}
+.hidden-m {
+  display: none;
+}
 
 @media @tablet-widths {
   .visually-hidden {
     display: block;
   }
-  .visually-hidden span {
+  .hidden {
+    display: block;
+  }
+  .hidden-m {
+  display: block;
+}
+  .hidden-t {
+    display: none;
+  }
+  .hidden span {
     display: none;
   }
   .visually-hidden.add-to-basket {
     display: none;
+  }
+}
+@media @desktop-widths {
+  .hidden {
+    display: block;
   }
 }
