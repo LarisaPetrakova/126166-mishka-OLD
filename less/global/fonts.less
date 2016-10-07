@@ -12,6 +12,11 @@ h1 {
   }
 h1.h1-pages {
   margin-bottom: 90px;
+  display: block;
+  background-color: @grey;
+  padding-bottom: 76px;
+  letter-spacing: 0.9px;
+  margin-bottom: 20px;
 }
 h2 {
   font-size: 17px;
@@ -20,8 +25,16 @@ h2 {
     line-height: 24px;
     padding-top: 20px;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 9px;
 }
+.h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: @black;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 
 h3 {
   font-size: 17px;
@@ -41,6 +54,10 @@ h4 {
   padding-top: 7px;
   margin-bottom: 25px;
   }
+.h4 {
+  padding-top: 0;
+  margin-top: 17px;
+}
 
 .font {
   font-size: 13px;
@@ -72,6 +89,9 @@ h4 {
     margin-top: 24px;
     margin-bottom: 25px;
   }
+  .font__video {
+
+  }
 }
 @media @tablet-widths {
   .font__reviews {
@@ -87,16 +107,31 @@ h4 {
       margin-bottom: 373px;
   }
 h1.h1-pages {
-  display: block;
-  background-color: @grey;
+
   padding-bottom: 78px;
   margin-bottom: 10px;
-    padding-top: 92px;
+    padding-top: 94px;
+  padding-left: 50px;
+  letter-spacing: 0.1px;
+  font-size: 43px;
+  line-height: 50px;
 
     }
+  .h2 {
+      flex-grow: 1;
+      font-size: 43px;
+      line-height: 50px;
+      padding-left: 17px;
+      padding-top: 25px;
+
+  }
   h4 {
     font-size: 43px;
     padding-left: 15px;
+  }
+  .h4 {
+    padding-top: 35px;
+    margin-bottom: 58px;
   }
   .font {
     font-size: 17px;
@@ -106,7 +141,19 @@ h1.h1-pages {
     padding-left: 50px;
     padding-right: 50px;
   }
-
+.font__product-week {
+    padding-left: 18px;
+    width: 300px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 13px;
+    margin-bottom: 35px;
+  }
+  .font__video {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
   }
 
 @media @desktop-widths {
@@ -114,13 +161,33 @@ h1.h1-pages {
     font-size: 53px;
     line-height: 57px;
   }
-
+  .h1 {
+    margin-bottom: 355px;
+  }
+  h1.h1-pages {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 92px;
+    padding-left: 41px;
+    padding-bottom: 95px;
+    margin-bottom: 120px;
+  }
   h2 {
     font-size: 53px;
     line-height: 57px;
   }
+  .h2 {
+      font-size: 53px;
+      line-height: 57px;
+      z-index: 0;
+      flex-basis: 600px;
+  }
   h4 {
     font-size: 53px;
     padding-left: 57px;
+  }
+  .font__video {
+    width: 234px;
+    margin-bottom: 46px;
   }
 }
