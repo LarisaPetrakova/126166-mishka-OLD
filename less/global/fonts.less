@@ -1,40 +1,44 @@
 h1 {
-    font-size: 27px;
-    font-weight: bold;
-    color: #010000;
-    line-height: 30px;
-    text-align: center;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 69px;
-    margin-bottom: 122px;
-    margin-top: 0;
-  }
+  font-size: 27px;
+  font-weight: bold;
+  color: #010000;
+  line-height: 30px;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 69px;
+  margin-bottom: 122px;
+  margin-top: 0;
+}
+
 h1.h1-pages {
-  margin-bottom: 90px;
   display: block;
   background-color: @grey;
   padding-bottom: 76px;
   letter-spacing: 0.9px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
+
 h2 {
   font-size: 17px;
-    font-weight: bold;
-    color: @black;
-    line-height: 24px;
-    padding-top: 20px;
-    text-align: left;
-    padding-top: 9px;
+  font-weight: bold;
+  color: @black;
+  line-height: 24px;
+  padding-top: 20px;
+  text-align: left;
+  padding-top: 9px;
 }
+
 .h2 {
-    font-size: 25px;
-    font-weight: bold;
-    color: @black;
-    line-height: 30px;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
+  font-size: 25px;
+  font-weight: bold;
+  color: @black;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 
 h3 {
   font-size: 17px;
@@ -53,7 +57,8 @@ h4 {
   color: @black;
   padding-top: 7px;
   margin-bottom: 25px;
-  }
+}
+
 .h4 {
   padding-top: 0;
   margin-top: 17px;
@@ -65,34 +70,36 @@ h4 {
   line-height: 24px;
   color: @dark-grey;
   text-align: left;
-
-  &__order {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 5px;
-    color: @dark-grey;
-    padding-bottom: 6px;
-    padding-left: 27px;
-  }
-
-  &__product-week {
-    font-size: 15px;
-    letter-spacing: 0.06px;
-    padding-bottom: 3px;
-  }
-
-  &__reviews {
-    font-size: 15px;
-    line-height: 30px;
-    padding: 0;
-    margin: 0;
-    margin-top: 24px;
-    margin-bottom: 25px;
-  }
-  .font__video {
-
-  }
 }
+
+.font__order {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 5px;
+  color: @dark-grey;
+  padding-bottom: 6px;
+  padding-right: 0;
+}
+
+.font__product-week {
+  font-size: 15px;
+  letter-spacing: 0.06px;
+  padding-bottom: 3px;
+}
+
+.font__reviews {
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.font__form {
+  margin-bottom: 17px;
+}
+
 @media @tablet-widths {
   .font__reviews {
     padding-top: 20px;
@@ -100,30 +107,39 @@ h4 {
     font-size: 17px;
     margin-bottom: 25px;
   }
-
   h1 {
-      font-size: 43px;
-      line-height: 50px;
-      margin-bottom: 373px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 373px;
   }
-h1.h1-pages {
-
-  padding-bottom: 78px;
-  margin-bottom: 10px;
-    padding-top: 94px;
-  padding-left: 50px;
-  letter-spacing: 0.1px;
-  font-size: 43px;
-  line-height: 50px;
-
-    }
+  h1.h1-pages {
+    padding-bottom: 78px;
+    margin-bottom: 10px;
+    padding-top: 93px;
+    letter-spacing: 0.7px;
+    font-size: 43px;
+    line-height: 50px;
+  }
   .h2 {
-      flex-grow: 1;
-      font-size: 43px;
-      line-height: 50px;
-      padding-left: 17px;
-      padding-top: 25px;
-
+    flex-grow: 1;
+    font-size: 43px;
+    line-height: 50px;
+    padding-left: 17px;
+    padding-top: 25px;
+  }
+  .h3 {
+    width: 100px;
+    margin-left: 25px;
+    padding-top: 20px;
+    margin-bottom: 200px;
+    margin-right: 67px;
+  }
+  .h3__color {
+    margin-bottom: 0;
+  }
+  .h3__name {
+    margin-bottom: 200px;
+    margin-top: 10px;
   }
   h4 {
     font-size: 43px;
@@ -141,7 +157,7 @@ h1.h1-pages {
     padding-left: 50px;
     padding-right: 50px;
   }
-.font__product-week {
+  .font__product-week {
     padding-left: 18px;
     width: 300px;
     font-size: 17px;
@@ -154,7 +170,11 @@ h1.h1-pages {
     line-height: 30px;
     margin-bottom: 35px;
   }
+  .font__order {
+    padding-top: 9px;
+    padding-right: 19px;
   }
+}
 
 @media @desktop-widths {
   h1 {
@@ -168,19 +188,29 @@ h1.h1-pages {
     font-size: 53px;
     line-height: 57px;
     padding-top: 92px;
-    padding-left: 41px;
     padding-bottom: 95px;
-    margin-bottom: 120px;
+    margin-bottom: 122px;
   }
   h2 {
     font-size: 53px;
     line-height: 57px;
   }
   .h2 {
-      font-size: 53px;
-      line-height: 57px;
-      z-index: 0;
-      flex-basis: 600px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 0;
+    flex-basis: 600px;
+  }
+  .h3 {
+    margin-right: 10px;
+    margin-left: 90px;
+  }
+  .h3__color {
+    margin-right: 17px;
+    margin-left: 0;
+  }
+  .h3__name {
+    margin-left: 86px;
   }
   h4 {
     font-size: 53px;
@@ -189,5 +219,9 @@ h1.h1-pages {
   .font__video {
     width: 234px;
     margin-bottom: 46px;
+  }
+  .font__form {
+    padding-left: 226px;
+    padding-right: 200px;
   }
 }

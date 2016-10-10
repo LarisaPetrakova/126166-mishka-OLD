@@ -11,22 +11,31 @@
   width: 256px;
   text-align: center;
   margin: 0 auto;
+}
 
-  &__size {
-    padding: 15px 10px;
-    width: 70px;
-    margin-left: 0;
-    border: 2px solid #63d1bb;
-    margin-bottom: 30px;
-    margin-right: 10px;
-  }
+.btn__size {
+  padding: 15px 10px;
+  width: 70px;
+  margin-left: 0;
+  border: 2px solid #63d1bb;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
 
-  &__add {
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 16px;
-    color: @white;
-    background-color: @green;
-    border: none;
-  }
+.btn__add {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  color: @white;
+  background-color: @green;
+  border: none;
+}
+
+.btn:hover {
+  background-color: @dark-grey;
+  color: @white;
+}
+
+.btn:active {
+  color: @link-hover;
 }

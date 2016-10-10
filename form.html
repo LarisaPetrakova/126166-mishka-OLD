@@ -7,104 +7,88 @@
   <title>Мишка - форма заказа</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
-  <body>
     <header class="page-header">
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__logo">
-        <a href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"> <img src="img/logo-mobile.svg" alt="Мишка"> </picture>
-        </a>
-      </div>
-      <button class="main-nav__toggle" type="button">
-        <a href="#">
-          <img class="main-nav__icon-menu" alt="Меню" width="20" src="img/icon-menu-open.svg"></a>
-      </button>
-      <a class="main-nav__link main-nav__link--catalog hidden" href="catalog.html">Каталог товаров</a>
-      <a class="main-nav__link main-nav__link--custom hidden" href="form.html">Вязание на заказ</a> <a class="main-nav__link main-nav__link--search hidden" href="#">
-      <span class="visually-hidden">Поиск по сайту</span></a>
-      <a class="main-nav__link main-nav__link--basket hidden" href="#">Корзина: пока пуста</a>
-      <a class="main-nav__link main-nav__link--new hidden hidden-m hidden-t" href="#">Новые поступления</a>
-      <a class="main-nav__link main-nav__link--sale hidden hidden-m hidden-t" href="#">Распродажа</a>
-      <p class="hidden hidden-m">Бесплатная доставка по России</p>
-    </nav>
-  </header>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__logo">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"> <img src="img/logo-mobile.svg" alt="Мишка"> </picture>
+          </a>
+        </div>
 
-  <h1 class="h1-pages">Вязание на заказ</h1>
-  <section class="form">
-    <p class="font font__form wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form class="order" action="#" method="post">
-      <div class="order__unit">
-        <h3 class="h3">Тип</h3>
-        <input type="radio" checked><label class="order__label">
-          Аксессуар для интерьера</label>
-        <label class="order__label">
-          <input type="radio">Детская игрушка</label>
+          <a href="#"> <img class="main-nav__toggle main-nav__icon-menu" alt="Меню" width="20" src="img/icon-menu-open.svg"></a>
+         <a class="main-nav__link main-nav__link--catalog hidden" href="catalog.html">Каталог товаров</a> <a class="main-nav__link main-nav__link--custom hidden" href="form.html">Вязание на заказ</a>
+        <a class="main-nav__link main-nav__link--search hidden" href="#"> <span class="visually-hidden">Поиск по сайту</span></a> <a class="main-nav__link main-nav__link--basket hidden" href="#">Корзина: пока пуста</a> <a class="main-nav__link main-nav__link--new hidden hidden-m hidden-t" href="#">Новые поступления</a> <a class="main-nav__link main-nav__link--sale hidden hidden-m hidden-t" href="#">Распродажа</a>
+        <p class="hidden hidden-m">Бесплатная доставка по России</p>
+      </nav>
+    </header>
+    <h1 class="h1-pages">Вязание на заказ</h1>
+    <section class="form">
+      <p class="font font__form wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form__order" action="#" method="post">
+        <div class="form__unit">
+          <h3 class="h3">Тип</h3>
+          <input type="radio" id="form__label--interior" checked>
+          <label for="form__label--interior" class="form__label"> Аксессуар для интерьера</label>
+          <input type="radio" id="form__label--toy">
+          <label for="form__label--toy" class="form__label"> Детская игрушка</label>
+        </div>
+        <div class="form__unit">
+          <h3 class="h3 h3__color">Цвет</h3>
+          <input type="checkbox" checked id="form__label--white">
+          <label for="form__label--white" class="form__label form__label--color"> Белый</label>
+          <input id="form__label--grey" type="checkbox" checked>
+          <label for="form__label--grey" class="form__label form__label--color"> Серый</label>
+          <input id="form__label--tiffany" type="checkbox">
+          <label for="form__label--tiffany" class="form__label form__label--color"> &laquo;Тиффани&raquo;</label>
+          <input type="checkbox" id="form__label--black">
+          <label for="form__label--black" class="form__label form__label--color">Черный</label>
+          <input type="checkbox" id="form__label--pink">
+          <label for="form__label--pink" class="form__label form__label--color">Розовый</label>
+          <input type="checkbox" id="form__label--orange">
+          <label for="form__label--orange" class="form__label form__label--color"> Оранжевый</label>
+        </div>
+        <div class="form__unit form__unit--name clearfix">
+          <h3 class="h3 h3__name">ФИО</h3>
+          <label class="form__name-label">Имя:
+            <input type="text" placeholder="Введите ваше имя"> </label>
+          <label class="form__name-label">Фамилия:
+            <input type="text" placeholder="Укажите фамилию"> </label>
+          <label class="form__name-label">Отчество:
+            <input type="text" placeholder="Отчество, если желаете"> </label>
+        </div>
+        <div class="form__unit form__unit--call">
+          <label for="form__unit--tel" class="form__h3 form__h3--tel">Тел </label>
+          <input id="form__unit--tel" class="form__unit--tel" type="text" placeholder="+7 ХХХ ХХ ХХ"> </div>
+        <div class="form__unit form__unit--email">
+          <label for="form__unit--mail" class="form__h3 form__h3--email">E-mail </label>
+          <input id="form__unit--mail" class="form__unit--mail" type="text" placeholder="Ваш Email"> </div>
+        <div class="form__unit form__unit--text">
+          <label for="text" class="form__h3 form__h3--text">Доп </label>
+          <textarea id="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+        <div class="form__unit">
+          <p class="font font__form hidden-t hidden-d">Все поля обязательны для заполнения</p>
+          <button class="btn form__send">Отправить заказ</button>
+          <p class="font font__order hidden-m">Все поля являются обязательными</p>
+        </div>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <a class="visually-hidden page-footer__logo" href="index.html"> <img alt="Мишка" width="107" src="img/logo-footer.svg"> </a>
+      <div class="page-footer__social">
+        <a class="social-link social-link--insta" href="#"></a>
+        <a class="social-link social-link--fb" href="#"></a>
+        <a class="social-link social-link--tw" href="#"></a>
       </div>
-      <div class="order__unit">
-        <h3 class="h3">Цвет</h3>
-<!--        А линию после шрифта можно сделать через модификатор  -->
-        <label class="order__label order__label--color">
-          <input type="checkbox" checked>Белый</label>
-        <label class="order__label order__label--color">
-          <input type="checkbox" checked>Серый</label>
-        <label class="order__label order__label--color">
-          <input type="checkbox">"Тиффани"</label>
-        <label class="order__label order__label--color">
-          <input type="checkbox">Черный</label>
-        <label class="order__label order__label--color">
-          <input type="checkbox">Розовый</label>
-        <label class="order__label order__label--color">
-          <input type="checkbox">Оранжевый</label>
+      <div class="page-footer__copyright"> <b>Разработано</b>
+        <a class="page-footer__copyright-link" href="#"></a>
       </div>
-      <div class="order__unit clearfix">
-        <h3 class="h3">ФИО</h3>
-        <label class="order__name-label">Имя:
-          <input type="text" placeholder="Введите ваше имя">
-        </label>
-        <label class="order__name-label">Фамилия:
-          <input type="text" placeholder="Укажите фамилию">
-        </label>
-        <label class="order__name-label">Отчество:
-          <input type="text" placeholder="Отчество, если желаете">
-        </label>
-      </div>
-      <div class="order__unit order__unit--call">
-        <label class="order__h3">Тел
-          <input class="order__unit--tel" type="text" placeholder="+7 ХХХ ХХ ХХ">
-        </label>
-      </div>
-      <div class="order__unit order__unit--email">
-        <label class="order__h3">E-mail
-          <input class="order__unit--mail" type="text" placeholder="Ваш Email">
-        </label>
-      </div>
-      <div class="order__unit">
-        <label class="order__h3">Доп
-          <textarea type="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </label>
-      </div>
-      <p class="font font__order">Все поля обязательны для заполнения</p>
-    <button class="btn order__send">Отправить заказ</button>
-    </form>
-  </section>
-  <footer class="page-footer">
-    <a class="visually-hidden page-footer__logo" href="index.html"> <img alt="Мишка" width="107" src="img/logo-footer.svg"> </a>
-    <div class="page-footer__social">
-      <a class="social-link social-link--insta" href="#"></a>
-      <a class="social-link social-link--fb" href="#"></a>
-      <a class="social-link social-link--tw" href="#"></a>
-    </div>
-    <div class="page-footer__copyright">
-      <b>Разработано</b>
-      <a class="page-footer__copyright-link" href="#"></a>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 
 </html>
