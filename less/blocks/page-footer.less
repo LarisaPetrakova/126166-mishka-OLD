@@ -7,33 +7,57 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 23px;
-  &__logo {
-    display: none;
-  }
-  &__social {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 24px;
-  }
-  &__copyright {
-    padding-bottom: 30px;
-    padding-left: 38px;
-    padding-top: 19px;
-  }
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 14px;
+  padding-right: 4px;
+}
+
+.page-footer__copyright {
+  padding-bottom: 20px;
+  padding-left: 38px;
+  padding-top: 20px;
 }
 
 .page-footer__copyright-link {
+  font-size: 0;
+}
+
+.page-footer__copyright-link b {
   display: inline-block;
-  width: 27px;
-  height: 40px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: 27px;
-  background-position: center;
-  padding-left: 40px;
-  vertical-align: middle;
+  vertical-align: text-bottom;
+  text-decoration: none;
+  color: @black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  margin-right: 29px;
+  padding-bottom: 11px;
+}
+
+.page-footer__copyright-link svg {}
+
+.page-footer__copyright-link:hover {
+  svg {
+    fill: #46c1ae;
+  }
+}
+
+.page-footer__copyright-link:active {
+  b {
+    color: #bfbfbf;
+  }
+  svg {
+    fill: #bde3dd;
+  }
 }
 
 @media @tablet-widths {
@@ -52,6 +76,12 @@
     margin-right: 85px;
     padding-bottom: 25px;
   }
+  .page-footer__logo-footer:hover {
+    fill: #46c1ae;
+  }
+  .page-footer__logo-footer:active {
+    fill: #bde3dd;
+  }
   .page-footer__social {
     width: 150px;
     margin-right: 75px;
@@ -67,9 +97,6 @@
   }
   .page-footer__copyright-link {
     margin-left: 3px;
-  }
-  .social-link--insta {
-    margin-top: 5px;
   }
 }
 

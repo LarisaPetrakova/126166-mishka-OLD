@@ -2,34 +2,57 @@
   line-height: 20px;
   color: @black;
   margin-bottom: 0px;
-  &__list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 48px;
+}
+
+.about-us__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 48px;
+}
+
+.about-us__item {
+  font-weight: bold;
+  padding-top: 55px;
+  padding-right: 0px;
+  margin-top: 30px;
+  margin-bottom: -2px;
+  font-size: 17px;
+  background-repeat: no-repeat;
+  &--eco {
+    padding-right: 70px;
+    background-image: url(../img/icon-feature-1.svg);
+    background-position: 18px 2px;
   }
-  &__item {
-    font-weight: bold;
-    padding-top: 55px;
-    padding-right: 0px;
-    margin-top: 30px;
-    margin-bottom: -2px;
-    font-size: 17px;
+  &--price {
+    background-image: url(../img/icon-feature-3.svg);
+    background-position: 0 2px;
+  }
+  &--withlove {
+    background-image: url(../img/icon-feature-2.svg);
+    background-position: 5px 5px;
+  }
+  &--price,
+  &--withlove {
+    padding-right: 50px;
+  }
+  &--local {
+    background-image: url(../img/icon-feature-4.svg);
+    background-position: 0px 6px;
+  }
+  &--likes {
+    padding-right: 60px;
+    background-image: url(../img/icon-feature-5.svg);
+    background-position: 8px 7px;
+  }
+  &--gift {
+    padding-right: 40px;
+    background-image: url(../img/icon-feature-6.svg);
+    background-position: 4px 5px;
+  }
+  &--video {
+    background-image: url(../img/icon-video.svg);
     background-repeat: no-repeat;
-    &--eco {
-      padding-right: 70px;
-      background-image: url(../img/icon-feature-1.svg);
-      background-position: 18px 2px;
-    }
-    &--price,
-    &--withlove {
-      padding-right: 50px;
-    }
-    &--likes {
-      padding-right: 60px;
-    }
-    &--gift {
-      padding-right: 40px;
-    }
+    background-position: 10px 10px;
   }
 }
 
@@ -41,37 +64,6 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-.about-us__item--price {
-  background-image: url(../img/icon-feature-3.svg);
-  background-position: 0 2px;
-}
-
-.about-us__item--likes {
-  background-image: url(../img/icon-feature-5.svg);
-  background-position: 8px 7px;
-}
-
-.about-us__item--withlove {
-  background-image: url(../img/icon-feature-2.svg);
-  background-position: 5px 5px;
-}
-
-.about-us__item--local {
-  background-image: url(../img/icon-feature-4.svg);
-  background-position: 0px 6px;
-}
-
-.about-us__item--gift {
-  background-image: url(../img/icon-feature-6.svg);
-  background-position: 4px 5px;
-}
-
-.product__name--video {
-  background-image: url(../img/icon-video.svg);
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
 }
 
 @media @tablet-widths {
@@ -93,40 +85,40 @@
     padding-top: 67px;
     margin-top: 7px;
     padding-right: 0;
-  }
-  .about-us__item--eco {
-    background-position: 29px 12px;
-    padding-left: 21px;
-    width: 270px;
-    margin-bottom: 5px;
-  }
-  .about-us__item--price {
-    background-position: 21px 15px;
-    padding-left: 21px;
-    width: 260px;
-  }
-  .about-us__item--likes {
-    background-position: 28px 27px;
-    padding-left: 21px;
-    width: 240px;
-  }
-  .about-us__item--withlove {
-    background-position: 13px 15px;
-    width: 270px;
-    padding-left: 7px;
-    margin-bottom: 5px;
-  }
-  .about-us__item--local {
-    background-image: url(../img/icon-feature-4.svg);
-    background-position: 3px 19px;
-    width: 300px;
-    padding-left: 8px;
-  }
-  .about-us__item--gift {
-    background-image: url(../img/icon-feature-6.svg);
-    background-position: 13px 22px;
-    width: 270px;
-    padding-left: 10px;
+    &--eco {
+      background-position: 29px 12px;
+      padding-left: 21px;
+      width: 270px;
+      margin-bottom: 5px;
+    }
+    &--price {
+      background-position: 21px 15px;
+      padding-left: 21px;
+      width: 260px;
+    }
+    &--likes {
+      background-position: 28px 27px;
+      padding-left: 21px;
+      width: 240px;
+    }
+    &--withlove {
+      background-position: 13px 15px;
+      width: 270px;
+      padding-left: 7px;
+      margin-bottom: 5px;
+    }
+    &--local {
+      background-image: url(../img/icon-feature-4.svg);
+      background-position: 3px 19px;
+      width: 300px;
+      padding-left: 8px;
+    }
+    &--gift {
+      background-image: url(../img/icon-feature-6.svg);
+      background-position: 13px 22px;
+      width: 270px;
+      padding-left: 10px;
+    }
   }
   .about-us:after {
     margin-top: 68px;

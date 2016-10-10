@@ -4,35 +4,49 @@
   color: @dark-grey;
   line-height: 30px;
   margin-bottom: 40px;
-  &__table {
-    border-collapse: collapse;
-    margin-bottom: 30px;
+}
+
+.contacts__table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.contacts__field {
+  padding-right: 0px;
+  display: block;
+  width: 75px;
+  &--address {
+    vertical-align: top;
+    padding-top: 30px;
   }
-  &__field {
-    padding-right: 0px;
-    display: block;
-    width: 75px;
-    &--address {
-      vertical-align: top;
-      padding-top: 30px;
+}
+
+.contacts__value--email a:active {
+  color: #d6efea;
+  text-decoration: none;
+  border-bottom: 1px solid #d6efea;
+}
+
+.contacts__value {
+  &--email {
+    padding-top: 0;
+    border-bottom: 1px solid @green;
+    a {
+      text-decoration: none;
+      color: @dark-grey;
     }
   }
-  &__value {
-    &--email {
-      padding-top: 0;
-      border-bottom: 1px solid @green;
-    }
-    &--address {
-      padding-right: 30px;
-      padding-top: 30px;
-    }
+  &--address {
+    padding-right: 30px;
+    padding-top: 30px;
   }
-  &__map {
-    width: 320px;
-    height: 457px;
-    margin-bottom: 39px;
-    background: url("../img/icon-map-pin.svg") 124px 165px no-repeat, url("../img/map-mobile@1x.jpg") 0 0 no-repeat;
-  }
+}
+
+.contacts__map {
+  width: 320px;
+  height: 457px;
+  margin-bottom: 39px;
+  background: url("../img/icon-map-pin.svg") 124px 165px no-repeat, url("../img/map-mobile@1x.jpg") 0 0 no-repeat;
 }
 
 @media @tablet-widths {
@@ -59,9 +73,11 @@
   }
   td {
     display: inline-block;
+    vertical-align: middle;
   }
   .contacts__field {
     display: inline-block;
+    vertical-align: middle;
     width: 55px;
     margin-right: 20px;
     padding-left: 20px;
@@ -136,6 +152,11 @@
   }
   .contacts__field {
     margin-right: 10px;
+  }
+  .contacts__value--email a:hover {
+    color: #46c1ae;
+    text-decoration: none;
+    border-bottom: 1px solid #46c1ae;
   }
   .contacts__map {
     width: 525px;

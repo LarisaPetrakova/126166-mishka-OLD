@@ -3,26 +3,26 @@
   background-position: -127px -19px;
   background-repeat: no-repeat;
   background-color: @light-grey;
+  background-size: 575px auto;
   @media @retina {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 160px auto;
+    background-size: 575px auto;
   }
 }
 
-  .features__category {
-    width: 320px;
-    font-size: 19px;
-    font-weight: bold;
-    color: @white;
-    line-height: 24px;
-  }
+.features__category {
+  width: 320px;
+  font-size: 19px;
+  font-weight: bold;
+  color: @white;
+  line-height: 24px;
+}
 
 .features__name {
   padding-left: 30px;
   padding-top: 25px;
   padding-bottom: 30px;
   padding-right: 180px;
-
   &--interior {
     background-color: @light-green;
     background-image: url(../img/icon-interior.svg);
@@ -48,6 +48,10 @@
   color: @white;
 }
 
+.features__name a:active {
+  color: #97e2d2;
+}
+
 @media @tablet-widths {
   .features {
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -59,85 +63,79 @@
     padding-top: 83px;
     @media @retina {
       background-image: url("../img/hero-mobile@2x.jpg");
-      background-size: 768px auto;
+      background-size: cover;
     }
   }
   .features__category {
-      padding-bottom: 0;
-      display: flex;
-      margin-left: 50px;
-      font-size: 20px;
-      line-height: 30px;
-      &--zigzag {
-        display: block;
-        height: 7px;
-        background-image: url("../img/bg-zigzag-fill.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        margin-top: -10px;
-      }
-  }
-    .features__name--interior {
-      padding-left: 35px;
-      padding-top: 30px;
-      padding-right: 188px;
-      padding-bottom: 30px;
-      background-position: 257px 30px;
-    }
-    .features__name--toys {
-      padding-left: 35px;
-      padding-top: 30px;
-      padding-right: 205px;
-      padding-bottom: 30px;
-      background-position: 237px 30px;
-    }
-  }
-
-@media @desktop-widths {
-  .features__category {
-    width: 1050px;
+    padding-bottom: 0;
+    display: flex;
     margin-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    &--zigzag {
+      display: block;
+      height: 7px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-top: -10px;
+    }
   }
   .features__name--interior {
-    padding-left: 40px;
-    padding-top: 28px;
-    padding-right: 270px;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-right: 188px;
     padding-bottom: 30px;
-    margin-top: 5px;
-  }
-  .features__name--interior:hover {
-    padding-top: 20px;
-    background-position: 243px 20px;
-    padding-bottom: 40px;
-    margin-top: 0;
+    background-position: 257px 30px;
   }
   .features__name--toys {
-    padding-left: 38px;
-    padding-top: 28px;
-    padding-right: 310px;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-right: 205px;
     padding-bottom: 30px;
-    margin-top: 5px;
+    background-position: 237px 30px;
   }
-  .features__name--toys:hover {
-    padding-top: 20px;
-    background-position: 243px 20px;
-    padding-bottom: 40px;
-    margin-top: 0;
-  }
+}
+
+@media @desktop-widths {
   .features {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-size: 1150px auto;
     @media @retina {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: 1150px auto;
+      background-size: 2300px auto;
     }
+  }
+  .features__category {
+    width: 1050px;
+    margin-left: 50px;
   }
   .features__name {
     &--interior {
       background-position: 448px 28px;
+      padding-left: 40px;
+      padding-top: 28px;
+      padding-right: 270px;
+      padding-bottom: 30px;
+      margin-top: 5px;
     }
     &--toys {
       background-position: 431px 30px;
+      padding-left: 38px;
+      padding-top: 28px;
+      padding-right: 310px;
+      padding-bottom: 30px;
+      margin-top: 5px;
     }
+  }
+  .features__name--interior:hover {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 0;
+  }
+  .features__name--toys:hover {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 0;
   }
 }
