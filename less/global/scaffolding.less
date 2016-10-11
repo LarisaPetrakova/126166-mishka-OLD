@@ -2,6 +2,7 @@ body {
   width: 320px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
 img {
@@ -32,6 +33,24 @@ img {
   font-size: 0;
 }
 
+.zig-zag {
+  height: 7px;
+  padding: 0;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+
+.modal-content-show {
+  display: block;
+}
+
+.modal-error {
+  border-bottom: 2px solid #62d1ba;
+}
+
 @media @tablet-widths {
   body {
     width: 768px;
@@ -39,6 +58,19 @@ img {
   }
   .slider {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .zig-zag {
+    height: 16px;
+  }
+  .zig-zag-fill {
+    margin-top: -20px;
+    height: 15px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 100;
   }
 }
 
@@ -52,5 +84,11 @@ img {
   }
   .wrapper {
     order: 1;
+  }
+  .zig-zag {
+    height: 23px;
+  }
+  .zig-zag-fill {
+    height: 23px;
   }
 }

@@ -23,9 +23,11 @@
 }
 
 .btn__add {
+  width: 260px;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
+  padding-top: 18px;
   color: @white;
   background-color: @green;
   border: none;
@@ -38,4 +40,10 @@
 
 .btn:active {
   color: @link-hover;
+}
+
+@media @tablet-widths {
+  .btn__add {
+  width: 350px;
+  }
 }

@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
           <svg fill="#000000" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
   <g class="main-nav__logo-mobile">
@@ -75,18 +74,18 @@
 
         </a>
 
-        <a class="main-nav__open" href="#">
+        <a class="main-nav__toggle main-nav__open" href="#">
           <img class="main-nav__icon-menu" alt="Меню" width="20" src="img/icon-menu-open.svg"></a>
-      <a class="main-nav__close hidden" href="#">
-        <img class="main-nav__icon-close" alt="Закрыть меню" width="20" src="img/icon-menu-close.svg">
-      </a>
-       <a class="main-nav__link main-nav__link--catalog hidden" href="catalog.html">Каталог товаров</a>
-      <a class="main-nav__link main-nav__link--custom hidden" href="form.html">Вязание на заказ</a>
-      <a class="main-nav__link main-nav__link--search hidden" href="#">
+       <a class="main-nav__link main-nav__link--catalog hidden modal-menu" href="catalog.html">Каталог товаров</a>
+      <a class="main-nav__link main-nav__link--custom hidden modal-menu" href="form.html">Вязание на заказ</a>
+      <a class="main-nav__link main-nav__link--search hidden modal-menu" href="#">
         <svg class="main-nav__link--search-svg" fill="#d3d2d2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
   <path fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
 </svg>
-<span class="visually-hidden">Поиск по сайту</span></a> <a class="main-nav__link main-nav__link--basket hidden" href="#">Корзина: пока пуста</a> <a class="main-nav__link main-nav__link--new hidden hidden-m hidden-t" href="#">Новые поступления</a> <a class="main-nav__link main-nav__link--sale hidden hidden-m hidden-t" href="#">Распродажа</a>
+<span class="visually-hidden">Поиск по сайту</span></a>
+      <a class="main-nav__link main-nav__link--basket hidden modal-menu" href="#">Корзина: пока пуста</a>
+      <a class="main-nav__link main-nav__link--new hidden hidden-m hidden-t modal-menu" href="#">Новые поступления</a>
+      <a class="main-nav__link main-nav__link--sale hidden hidden-m hidden-t modal-menu" href="#">Распродажа</a>
       <p class="hidden hidden-m">Бесплатная доставка по России</p>
     </nav>
   </header>
@@ -97,14 +96,14 @@
       <div class="features__name features__name--interior"><a class="features__link--interior" href="#">Предметы интерьера</a></div>
       <div class="features__name features__name--toys"><a class="features__link--interior" href="#">Детские игрушки</a></div>
     </div>
-    <div class="features__category--zigzag"></div>
   </section>
+  <div class="zig-zag-fill visually-hidden"></div>
   <section class="product-week wrapper">
     <header class="product-week__header section-header">
-      <h2 class="h2 clearfix">Вязаные корзинки</h2>
+      <h2 class="h2 h2__product-week">Вязаные корзинки</h2>
       <h3 class="product-week__subtitle">Товар недели</h3> </header>
     <div class="product-week__inner">
-      <p class="font font__product-week product-week__font">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+      <p class="font font__product-week product-week__font">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="product-week__info">
         <tr>
           <td class="product-week__value">Цвет</td>
@@ -122,17 +121,21 @@
       <picture class="product-week__img">
         <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x"> <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели" class="product-week__img"> </picture>
-      <p class="product-week__price">Цена: 990 руб.</p> <a class="product-week__buy btn" href="#">Заказать</a> </div>
+      <p class="product-week__price">Цена: 990 руб.</p> <a class="product-week__buy btn btn__js" href="#">Заказать</a> </div>
   </section>
-  <div class="add-to-basket visually-hidden wrapper"> <b class="add-to-basket__title">Добавить в корзину</b> <span class="add-to-basket__text">Выберите размер:</span>
+  <div class="zig-zag"></div>
+  <div class="add-to-basket visually-hidden wrapper modal-content">
+    <b class="add-to-basket__title">Добавить в корзину</b>
+    <span class="add-to-basket__text">Выберите размер:</span>
     <div class="add-to-basket__sizes">
       <button class="add-to-basket__size btn btn__size">S</button>
       <button class="add-to-basket__size btn btn__size">M</button>
       <button class="add-to-basket__size btn btn__size">L</button>
     </div>
-    <div class="btn btn__add">Добавить</div>
+    <div class="btn btn__add btn-js modal-content-close">Добавить</div>
   </div>
-  <section class="about-us wrapper">
+  <section class="about-us">
+    <div class="wrapper">
     <header class="about-us__header">
       <h2 class="h2 about-us__h2">Коротко о нас:</h2> </header>
     <ul class="about-us__list clearfix">
@@ -144,6 +147,7 @@
       <li class="about-us__item about-us__item--local">Поддержка отечественного производителя </li>
       <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке </li>
     </ul>
+    </div>
     <div class="reviews">
       <header class="section-header">
         <h2 class="h2 reviews__header">Отзывы</h2> </header>
@@ -154,6 +158,7 @@
         <button class="reviews__next" type="button"></button>
       </div> <a class="reviews__write btn" href="#">Написать</a> </div>
   </section>
+  <div class="zig-zag"></div>
   <section class="contacts clearfix">
     <div class="wrapper">
       <h4 class="h4 contacts__h4">Контакты</h4>

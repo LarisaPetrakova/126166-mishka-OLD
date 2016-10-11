@@ -1,7 +1,8 @@
     .product__inner {
       padding-left: 0;
       padding-right: 0;
-      margin-bottom: 28px;
+      margin-bottom: 29px;
+      margin-top: 0;
       font-size: 0;
       &--video {
         margin-bottom: 50px;
@@ -22,6 +23,7 @@
     }
 
     .product__name {
+      margin-bottom: 3px;
       a {
         text-decoration: none;
         color: @black;
@@ -45,7 +47,7 @@
       color: @dark-grey;
       line-height: 30px;
       margin-top: 0;
-      margin-bottom: 15px;
+      margin-bottom: 19px;
     }
 
     .product__price {
@@ -55,7 +57,7 @@
       line-height: 24px;
       display: inline-block;
       padding-top: 22px;
-      padding-right: 160px;
+      padding-right: 111px;
       border-top: 1px solid @light-grey;
     }
 
@@ -64,13 +66,22 @@
     }
 
     .product__video {
-      background: url("../img/icon-play.svg") no-repeat 80px 40px, url("../img/video-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100px, cover;
+      background: url("../img/video-mobile@1x.jpg") no-repeat 0 0;
+      background-size: cover;
       height: 150px;
       @media @retina {
-        background: url("../img/icon-play.svg") no-repeat 80px 40px, url("../img/video-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100px, cover;
+        background: url("../img/video-mobile@2x.jpg") no-repeat 0 0;
+        background-size: cover;
         height: 150px;
+      }
+    }
+
+    .product__video {
+      svg {
+        width: 100px;
+        height: auto;
+        padding-top: 40px;
+        padding-left: 80px;
       }
     }
 
@@ -154,12 +165,12 @@
         order: 1;
         width: 668px;
         height: 430px;
-        background: url("../img/icon-play.svg") no-repeat 284px 194px, url("../img/video-tablet@1x.jpg") no-repeat 0 0;
-        background-size: 100px, cover;
+        background: url("../img/video-tablet@1x.jpg") no-repeat 0 0;
+        background-size: cover;
         padding-bottom: 24px;
         @media @retina {
-          background: url("../img/icon-play.svg") no-repeat 284px 194px, url("../img/video-tablet@2x.jpg") no-repeat 0 0;
-          background-size: 100px, cover;
+          background: url("../img/video-tablet@2x.jpg") no-repeat 0 0;
+          background-size: cover;
         }
       }
       .product__btn {

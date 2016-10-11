@@ -40,17 +40,7 @@
   text-decoration: none;
 }
 
-.product-week:after {
-  content: "";
-  display: block;
-  height: 7px;
-  padding: 0;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 110%;
-  background-repeat: no-repeat;
-  margin-top: 30px;
-  margin-bottom: 6px;
-}
+
 
 @media @tablet-widths {
   .product-week {
@@ -79,7 +69,7 @@
     order: 1;
   }
   .product-week__info {
-    margin-left: 13px;
+    margin-left: 19px;
     width: 300px;
     text-align: left;
     order: 2;
@@ -89,11 +79,11 @@
       height: 34px;
       display: block;
       width: 290px;
+      margin-right: 44px;
     }
   }
   .product-week__img {
     order: 5;
-    margin-left: 10px;
     margin-top: 18px;
   }
   .product-week__price {
@@ -103,6 +93,7 @@
     text-align: center;
     margin-bottom: 35px;
     order: 3;
+    padding-left: 0;
   }
   .product-week__buy {
     margin-left: 18px;
@@ -112,17 +103,13 @@
     line-height: 16px;
     order: 4;
   }
-  .product-week:after {
-    width: 110%;
-    margin-left: -35px;
-    padding-bottom: 10px;
-  }
 }
 
 @media @desktop-widths {
   .product-week {
     padding-top: 101px;
     padding-left: 93px;
+    padding-bottom: 20px;
   }
   .product-week__subtitle {
     margin-top: 42px;
@@ -134,9 +121,9 @@
     height: 530px;
   }
   .product-week__info {
-    margin-top: 10px;
+    margin-top: 13px;
     margin-left: 17px;
-    margin-bottom: 92px;
+    margin-bottom: 88px;
   }
   .product-week__price {
     margin-bottom: 34px;
@@ -150,14 +137,7 @@
     order: 4;
   }
   .product-week__img {
-    margin-left: 5px;
+    margin-left: 8px;
     margin-top: -65px;
-  }
-  .product-week:after {
-    margin-left: -117px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-    height: 23px;
-    width: 115%;
   }
 }
