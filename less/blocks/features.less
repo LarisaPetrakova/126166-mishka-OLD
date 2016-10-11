@@ -28,28 +28,32 @@
     background-image: url(../img/icon-interior.svg);
     background-repeat: no-repeat;
     background-position: 243px 25px;
-  }
-  &--interior:active {
+
+    &:active {
     color: #97e2d2;
   }
+  }
+
   &--toys {
     background-color: @green;
     background-image: url(../img/icon-toy.svg);
     background-repeat: no-repeat;
     background-position: 233px 20px;
-  }
-  &--toys:active {
+
+    &:active {
     color: #97e2d2;
   }
+  }
+
 }
 
 .features__name a {
   text-decoration: none;
   color: @white;
-}
 
-.features__name a:active {
+&:active {
   color: #97e2d2;
+}
 }
 
 @media @tablet-widths {
@@ -79,6 +83,11 @@
     padding-right: 188px;
     padding-bottom: 30px;
     background-position: 257px 30px;
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin-top: 0;
+    }
   }
   .features__name--toys {
     padding-left: 35px;
@@ -86,6 +95,11 @@
     padding-right: 205px;
     padding-bottom: 30px;
     background-position: 237px 30px;
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin-top: 0;
+    }
   }
 }
 
@@ -119,15 +133,5 @@
       padding-bottom: 30px;
       margin-top: 5px;
     }
-  }
-  .features__name--interior:hover {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-top: 0;
-  }
-  .features__name--toys:hover {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-top: 0;
   }
 }

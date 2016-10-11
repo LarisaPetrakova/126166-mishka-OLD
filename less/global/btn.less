@@ -11,6 +11,13 @@
   width: 256px;
   text-align: center;
   margin: 0 auto;
+  &:hover {
+    background-color: @dark-grey;
+    color: @white;
+  }
+  &:active {
+    color: @link-hover;
+  }
 }
 
 .btn__size {
@@ -33,17 +40,8 @@
   border: none;
 }
 
-.btn:hover {
-  background-color: @dark-grey;
-  color: @white;
-}
-
-.btn:active {
-  color: @link-hover;
-}
-
 @media @tablet-widths {
   .btn__add {
-  width: 350px;
+    width: 350px;
   }
 }

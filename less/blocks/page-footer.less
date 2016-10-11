@@ -30,6 +30,11 @@
 
 .page-footer__copyright-link {
   font-size: 0;
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
 }
 
 .page-footer__copyright-link b {
@@ -37,18 +42,10 @@
   vertical-align: text-bottom;
   text-decoration: none;
   color: @black;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 19px;
   margin-right: 29px;
   padding-bottom: 11px;
-}
-
-.page-footer__copyright-link svg {}
-
-.page-footer__copyright-link:hover {
-  svg {
-    fill: #46c1ae;
-  }
 }
 
 .page-footer__copyright-link:active {

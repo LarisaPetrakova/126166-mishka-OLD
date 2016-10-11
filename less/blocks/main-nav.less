@@ -13,11 +13,17 @@
   width: 320px;
 }
 
+.main-nav__no-js {
+  height: 394px;
+}
+.main-nav__icon-close--no-js {
+  display: none;
+}
 .main-nav__logo svg {
   width: 87px;
   height: 45px;
   padding-top: 16px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   margin-left: 116px;
   margin-right: 3px;
 }
@@ -31,9 +37,9 @@
   background-color: transparent;
   border: none;
   align-self: flex-end;
-  margin-top: -53px;
-  margin-right: 30px;
-  margin-bottom: 54px;
+  position: absolute;
+  top: 28px;
+  right: 30px;
 }
 
 .main-nav__close {
@@ -46,7 +52,6 @@
 }
 
 .main-nav__link {
-  display: block;
   text-decoration: none;
   color: @black;
   padding-left: 75px;
@@ -54,18 +59,26 @@
   padding-bottom: 27px;
   background-color: @white;
   border-bottom: 1px solid @light-grey;
-}
 
-.main-nav__link:active {
-  color: @link-down;
-}
+  &:active {
+    color: @link-down;
+  }
+  &--catalog {
+    border-top: 1px solid @light-grey;
+  }
 
-.main-nav__link--search {
+&--search,
+  &--basket {
   display: block;
-}
+  padding-left: 31px;
 
+  svg {
+    margin-right: 21px;
+  }
+}
+}
 .main-nav__link--search span {
-  display: block;
+  display: inline-block;
 }
 
 @media @tablet-widths {
@@ -174,21 +187,21 @@
     padding-left: 46px;
     padding-right: 0;
     margin-right: 49px;
-  }
-  .main-nav__logo svg {
-    width: 150px;
-    height: 35px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .main-nav__logo:hover {
-    svg {
-      fill: #666666;
+    &:hover {
+      svg {
+        fill: #666666;
+      }
     }
-  }
-  .main-nav__logo:active {
+    &:active {
+      svg {
+        fill: #b2b2b2;
+      }
+    }
     svg {
-      fill: #b2b2b2;
+      width: 150px;
+      height: 35px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
   .main-nav__logo-desktop {
@@ -242,11 +255,14 @@
       border: none;
       background-color: transparent;
     }
+    &:hover {
+      color: @link-hover;
+    }
   }
-  .main-nav__link--search-svg:hover {
+  .main-nav__search-svg:hover {
     fill: #63d1bb;
   }
-  .main-nav__link--search-svg:active {
+  .main-nav__search-svg:active {
     fill: #d0f1ea;
   }
   .main-nav p {
@@ -254,8 +270,5 @@
     margin-left: auto;
     padding-right: 30px;
     margin-right: 20px;
-  }
-  .main-nav__link:hover {
-    color: @link-hover;
   }
 }

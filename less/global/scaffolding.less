@@ -1,7 +1,7 @@
 body {
   width: 320px;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
 }
 
@@ -15,6 +15,13 @@ img {
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 7px;
+}
+
+.wrapper__catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 29px;
 }
 
 .unit-header {
@@ -85,10 +92,16 @@ img {
   .wrapper {
     order: 1;
   }
+  .wrapper__catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .zig-zag {
     height: 23px;
   }
   .zig-zag-fill {
     height: 23px;
+    margin-bottom: 106px;
   }
 }
