@@ -11,10 +11,6 @@
   width: 256px;
   text-align: center;
   margin: 0 auto;
-  &:hover {
-    background-color: @dark-grey;
-    color: @white;
-  }
   &:active {
     color: @link-hover;
   }
@@ -24,9 +20,13 @@
   padding: 15px 10px;
   width: 70px;
   margin-left: 0;
-  border: 2px solid #63d1bb;
+  border: 2px solid #ececec;
   margin-bottom: 30px;
   margin-right: 10px;
+  outline: none;
+  &:active {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .btn__add {
@@ -41,7 +41,26 @@
 }
 
 @media @tablet-widths {
+  .btn {
+    &:hover {
+      background-color: @dark-grey;
+      color: @white;
+    }
+    &:active {
+      color: @link-hover;
+    }
+  }
   .btn__add {
     width: 350px;
+  }
+  .btn__size {
+    &:hover {
+      border: 2px solid #c7c7c7;
+      background-color: transparent;
+      color: #444444;
+    }
+    &:active {
+      border: 2px solid #62d1ba;
+    }
   }
 }
