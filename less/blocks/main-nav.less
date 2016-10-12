@@ -27,7 +27,11 @@
   margin-left: 116px;
   margin-right: 3px;
 }
-
+.main-nav__logo:active {
+      svg {
+        fill: #b2b2b2;
+      }
+  }
 .main-nav__logo-tablet,
 .main-nav__logo-desktop {
   display: none;
@@ -77,6 +81,17 @@
   }
 }
 }
+.main-nav__link--search:active {
+    svg {
+    fill: #d0f1ea;
+    }
+  }
+
+  .main-nav__link--basket:active {
+    svg {
+      fill: #d0f1ea;
+    }
+  }
 .main-nav__link--search span {
   display: inline-block;
 }
@@ -149,15 +164,13 @@
       font-size: 17px;
       line-height: 24px;
       padding-top: 30px;
-      padding-left: 82px;
+      padding-left: 36px;
       order: 3;
-      background-position: 31px 33px;
-      background-size: 21px;
       border: none;
     }
     &--catalog {
       background-color: transparent;
-      padding-top: 17px;
+      padding-top: 19px;
       padding-left: 49px;
       padding-right: 10px;
       padding-bottom: 10px;
@@ -167,7 +180,7 @@
     }
     &--custom {
       background-color: transparent;
-      padding-top: 17px;
+      padding-top: 19px;
       padding-left: 26px;
       padding-right: 100px;
       padding-bottom: 10px;
@@ -188,9 +201,11 @@
     font-size: 15px;
     line-height: 24px;
     order: 6;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-left: 35px;
   }
+
+
   .main-nav__link--search:hover {
     svg {
     fill: #63d1bb;
@@ -304,26 +319,7 @@
       color: @link-hover;
     }
   }
-  .main-nav__link--search:hover {
-    svg {
-    fill: #63d1bb;
-    }
-  }
-  .main-nav__link--search:active {
-    svg {
-    fill: #d0f1ea;
-    }
-  }
-  .main-nav__link--basket:hover {
-    svg {
-      fill: #63d1bb;
-    }
-  }
-  .main-nav__link--basket:active {
-    svg {
-      fill: #d0f1ea;
-    }
-  }
+
   .main-nav p {
     order: 7;
     margin-left: auto;

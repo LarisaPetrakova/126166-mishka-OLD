@@ -25,24 +25,22 @@
   }
 }
 
-.contacts__value--email a:active {
-  color: #d6efea;
-  text-decoration: none;
-  border-bottom: 1px solid #d6efea;
-}
-
 .contacts__value {
   &--email {
     padding-top: 0;
     border-bottom: 1px solid @green;
-    a {
-      text-decoration: none;
-      color: @dark-grey;
-    }
   }
   &--address {
     padding-right: 30px;
     padding-top: 30px;
+  }
+}
+
+.contacts__email {
+  text-decoration: none;
+  color: @dark-grey;
+  &:active {
+    color: #dcf1ed;
   }
 }
 
@@ -51,6 +49,9 @@
   height: 457px;
   margin-bottom: 39px;
   background: url("../img/icon-map-pin.svg") 124px 165px no-repeat, url("../img/map-mobile@1x.jpg") 0 0 no-repeat;
+}
+.contacts__btn:active {
+  background-color: #444444;
 }
 
 @media @tablet-widths {
@@ -112,12 +113,17 @@
     line-height: 16px;
     width: 228px;
   }
+  .contacts__email {
+    &:hover {
+      color: #69caba;
+    }
+  }
 }
 
 @media @desktop-widths {
   .contacts {
     padding-left: 113px;
-    padding-top: 67px;
+    padding-top: 64px;
     display: flex;
     flex-wrap: wrap;
     height: 484px;
@@ -129,7 +135,7 @@
     }
     .contacts__h4 {
       padding-left: 77px;
-      padding-top: 60px;
+      padding-top: 57px;
       margin-bottom: 35px;
     }
   }
@@ -150,14 +156,6 @@
       padding-bottom: 0px;
       padding-left: 10px;
     }
-  }
-  .contacts__value--email {
-    border-bottom: 1px solid @green;
-  }
-  .contacts__value--email a:hover {
-    color: #46c1ae;
-    text-decoration: none;
-    border-bottom: 1px solid #46c1ae;
   }
   .contacts__address {
     margin-right: 14px;
