@@ -87,13 +87,17 @@
   input[type="radio"]+label:active::before {
     border: 2px solid #c7c7c7;
   }
-  input[type="radio"]:checked+label::after {
+  input[type="radio"]+label::after {
     width: 12px;
     height: 12px;
     background-color: @light-green;
     border: 2px solid @light-green;
     top: 12px;
     left: 12px;
+    display: none;
+  }
+  input[type="radio"]:checked+label::after {
+    display: block;
   }
   .form__label--color {
     margin-bottom: 13px;
@@ -140,9 +144,9 @@
     margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-  }
-  input[type="text"]:hover {
-    border-bottom: 2px solid #62d1ba;
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+    }
   }
   input:focus::-webkit-input-placeholder {
     color: @dark-grey;
@@ -179,6 +183,10 @@
   }
 }
 
+.form__unit:last-child {
+  margin-bottom: 0;
+}
+
 .form__h3 {
   font-size: 17px;
   font-weight: bold;
@@ -197,24 +205,27 @@ textarea {
   font-size: 17px;
   line-height: 18px;
   color: #d2d2d2;
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: @dark-grey;
+  }
+  &:focus:-moz-placeholder {
+    color: @dark-grey;
+  }
+  &:focus:-ms-input-placeholder {
+    color: @dark-grey;
+  }
 }
-textarea:hover {
-      border: 2px solid #62d1ba;
-    }
-textarea:focus::-webkit-input-placeholder {
-    color: @dark-grey;
-  }
-  textarea:focus:-moz-placeholder {
-    color: @dark-grey;
-  }
-  textarea:focus:-ms-input-placeholder {
-    color: @dark-grey;
-  }
 
 .form__send {
   background-color: @white;
   margin-top: 20px;
   width: 259px;
+  &:active {
+    background-color: #444444;
+  }
 }
 
 .form__unit--call {
@@ -225,6 +236,20 @@ textarea:focus::-webkit-input-placeholder {
   .form {
     padding-top: 39px;
     margin-bottom: 42px;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -18px;
+      width: 100%;
+      height: 23px;
+      background-size: auto 23px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      z-index: 100;
+    }
   }
   .form__unit .h3:after {
     display: none;
@@ -420,17 +445,19 @@ textarea:focus::-webkit-input-placeholder {
       font-weight: normal;
       letter-spacing: 1px;
     }
-
   }
   .form__send {
     font-size: 17px;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 7px;
     width: 229px;
   }
 }
 
 @media @desktop-widths {
+  .form {
+    padding-top: 90px;
+  }
   .form__unit:nth-child(2) {
     padding-right: 139px;
     height: 192px;
@@ -483,5 +510,8 @@ textarea:focus::-webkit-input-placeholder {
     textarea {
       width: 680px;
     }
+  }
+  .form__send {
+    margin-left: 20px;
   }
 }

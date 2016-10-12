@@ -11,31 +11,56 @@
   width: 256px;
   text-align: center;
   margin: 0 auto;
+  &:active {
+    color: @link-hover;
+  }
 }
 
 .btn__size {
   padding: 15px 10px;
   width: 70px;
   margin-left: 0;
-  border: 2px solid #63d1bb;
+  border: 2px solid #ececec;
   margin-bottom: 30px;
   margin-right: 10px;
+  outline: none;
+  &:active {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .btn__add {
+  width: 260px;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
+  padding-top: 18px;
   color: @white;
   background-color: @green;
   border: none;
 }
 
-.btn:hover {
-  background-color: @dark-grey;
-  color: @white;
-}
-
-.btn:active {
-  color: @link-hover;
+@media @tablet-widths {
+  .btn {
+    &:hover {
+      background-color: @dark-grey;
+      color: @white;
+    }
+    &:active {
+      color: @link-hover;
+    }
+  }
+  .btn__add {
+    width: 350px;
+  }
+  .btn__size {
+    &:hover {
+      border: 2px solid #c7c7c7;
+      background-color: transparent;
+      color: #444444;
+    }
+    &:active {
+      border: 2px solid #62d1ba;
+    }
+  }
 }

@@ -2,6 +2,10 @@
   line-height: 20px;
   color: @black;
   margin-bottom: 0px;
+  padding-bottom: 16px;
+}
+.about-us__h2 {
+  padding-top: 11px;
 }
 
 .about-us__list {
@@ -21,7 +25,7 @@
   &--eco {
     padding-right: 70px;
     background-image: url(../img/icon-feature-1.svg);
-    background-position: 18px 2px;
+    background-position: 9px 2px;
   }
   &--price {
     background-image: url(../img/icon-feature-3.svg);
@@ -29,7 +33,7 @@
   }
   &--withlove {
     background-image: url(../img/icon-feature-2.svg);
-    background-position: 5px 5px;
+    background-position: 4px 5px;
   }
   &--price,
   &--withlove {
@@ -56,27 +60,23 @@
   }
 }
 
-.about-us:after {
-  content: "";
-  display: block;
-  height: 7px;
-  margin-top: 47px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 @media @tablet-widths {
+  .about-us {
+    margin-bottom: 50px;
+  }
   .about-us__header {
     padding-bottom: 0;
   }
+  .about-us__h2 {
+  padding-top: 32px;
+}
   .about-us__list {
     height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 73px;
+    margin-bottom: 68px;
   }
   .about-us__item {
     font-size: 20px;
@@ -120,16 +120,12 @@
       padding-left: 10px;
     }
   }
-  .about-us:after {
-    margin-top: 68px;
-    background-size: 110%;
-    height: 17px;
-  }
 }
 
 @media @desktop-widths {
+
   .about-us__h2 {
-    padding-top: 20px;
+    padding-top: 44px;
     padding-left: 192px;
   }
   .about-us__list {
@@ -140,14 +136,11 @@
     align-content: space-between;
     margin-left: 173px;
     margin-right: 200px;
-    margin-bottom: 78px;
+    margin-bottom: 74px;
   }
   .about-us__item {
     padding-left: 20px;
     padding-right: 0;
     width: 340px;
-  }
-  .about-us:after {
-    height: 24px;
   }
 }

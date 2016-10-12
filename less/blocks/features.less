@@ -28,28 +28,32 @@
     background-image: url(../img/icon-interior.svg);
     background-repeat: no-repeat;
     background-position: 243px 25px;
-  }
-  &--interior:active {
+
+    &:active {
     color: #97e2d2;
   }
+  }
+
   &--toys {
     background-color: @green;
     background-image: url(../img/icon-toy.svg);
     background-repeat: no-repeat;
     background-position: 233px 20px;
-  }
-  &--toys:active {
+
+    &:active {
     color: #97e2d2;
   }
+  }
+
 }
 
 .features__name a {
   text-decoration: none;
   color: @white;
-}
 
-.features__name a:active {
+&:active {
   color: #97e2d2;
+}
 }
 
 @media @tablet-widths {
@@ -59,7 +63,6 @@
     background-position: top;
     background-repeat: no-repeat;
     background-color: @light-grey;
-    min-height: 535px;
     padding-top: 83px;
     @media @retina {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -72,14 +75,6 @@
     margin-left: 50px;
     font-size: 20px;
     line-height: 30px;
-    &--zigzag {
-      display: block;
-      height: 7px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      margin-top: -10px;
-    }
   }
   .features__name--interior {
     padding-left: 35px;
@@ -87,6 +82,12 @@
     padding-right: 188px;
     padding-bottom: 30px;
     background-position: 257px 30px;
+    margin-top: 5px;
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin-top: 0;
+    }
   }
   .features__name--toys {
     padding-left: 35px;
@@ -94,6 +95,12 @@
     padding-right: 205px;
     padding-bottom: 30px;
     background-position: 237px 30px;
+    margin-top: 5px;
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin-top: 0;
+    }
   }
 }
 
@@ -127,15 +134,5 @@
       padding-bottom: 30px;
       margin-top: 5px;
     }
-  }
-  .features__name--interior:hover {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-top: 0;
-  }
-  .features__name--toys:hover {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-top: 0;
   }
 }

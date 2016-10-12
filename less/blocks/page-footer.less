@@ -18,37 +18,29 @@
   vertical-align: middle;
   margin: 0 auto;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
   padding-right: 4px;
 }
 
 .page-footer__copyright {
   padding-bottom: 20px;
   padding-left: 38px;
-  padding-top: 20px;
+  padding-top: 21px;
 }
-
 .page-footer__copyright-link {
-  font-size: 0;
-}
+    font-size: 0;
+  }
+
 
 .page-footer__copyright-link b {
   display: inline-block;
   vertical-align: text-bottom;
   text-decoration: none;
   color: @black;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 19px;
   margin-right: 29px;
   padding-bottom: 11px;
-}
-
-.page-footer__copyright-link svg {}
-
-.page-footer__copyright-link:hover {
-  svg {
-    fill: #46c1ae;
-  }
 }
 
 .page-footer__copyright-link:active {
@@ -94,10 +86,18 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 34px;
+    padding-top: 27px;
   }
+
   .page-footer__copyright-link {
+  font-size: 0;
     margin-left: 3px;
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
   }
+}
 }
 
 @media @desktop-widths {
