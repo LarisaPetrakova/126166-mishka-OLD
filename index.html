@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
@@ -119,9 +118,12 @@
   <div class="zig-zag"></div>
   <div class="add-to-basket visually-hidden wrapper modal-content"> <b class="add-to-basket__title">Добавить в корзину</b> <span class="add-to-basket__text">Выберите размер:</span>
     <div class="add-to-basket__sizes">
-      <button class="add-to-basket__size btn btn__size">S</button>
-      <button class="add-to-basket__size btn btn__size">M</button>
-      <button class="add-to-basket__size btn btn__size">L</button>
+      <input type="radio" id="size-s" name="S" value="S" checked>
+      <label for="size-s" class="add-to-basket__size btn btn__size">S</label>
+      <input type="radio" id="size-m" name="M" value="M">
+      <label for="size-m" class="add-to-basket__size btn btn__size">M</label>
+      <input type="radio" id="size-l" name="L" value="L">
+      <label for="size-l" class="add-to-basket__size btn btn__size">L</label>
     </div>
     <div class="btn btn__add btn-js modal-content-close">Добавить</div>
   </div>

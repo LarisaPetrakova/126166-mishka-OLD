@@ -24,22 +24,28 @@
     padding-top: 9px;
     text-align: center;
   }
-
   .add-to-basket__text {
     font-size: 15px;
     font-weight: normal;
     color: @dark-grey;
     line-height: 30px;
   }
-
+.add-to-basket__sizes {
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"]:checked+label {
+    border-color: #63d1bb;
+  }
+}
   .add-to-basket__size {
-    width: 81px;
+    width: 58px;
     display: inline-block;
     vertical-align: middle;
     background-color: @white;
     margin-top: 24px;
     margin-bottom: 33px;
-    margin-right: 2px;
+    margin-right: 3px;
   }
 
 @media @tablet-widths {

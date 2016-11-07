@@ -147,6 +147,28 @@
     &:hover {
       border-bottom: 2px solid #62d1ba;
     }
+    &:invalid {
+      border-bottom: 2px solid #f0b1b1;
+    }
+  }
+  input[type="tel"] {
+    font-size: 17px;
+    font-weight: normal;
+    color: #d2d2d2;
+    line-height: 18px;
+    width: 260px;
+    border: none;
+    border-bottom: 2px solid @black;
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+    }
+    &:invalid {
+      border-bottom: 2px solid #f0b1b1;
+    }
   }
   input:focus::-webkit-input-placeholder {
     color: @dark-grey;
@@ -358,6 +380,10 @@ textarea {
     flex-grow: 1;
     min-width: 100px;
   }
+  input[type="tel"] {
+    flex-grow: 1;
+    min-width: 100px;
+  }
   .form__label {
     margin-bottom: 20px;
     padding-top: 18px;
@@ -423,6 +449,14 @@ textarea {
       left: 11px;
     }
     input[type="text"] {
+      margin-left: 24px;
+      margin-right: 10px;
+      padding-top: 0px;
+      padding-left: 18px;
+      padding-bottom: 15px;
+      padding-top: 3px;
+    }
+    input[type="tel"] {
       margin-left: 24px;
       margin-right: 10px;
       padding-top: 0px;
